@@ -19,7 +19,7 @@
     /* Blockquotes */
     --blockquote-border-thickness: 2px;
     --blockquote-border-color: var(--interactive-accent);
-    --blockquote-font-style: normal;
+    --blockquote-font-style: underline;
     --blockquote-color: inherit;
     --blockquote-background-color: transparent;
     /* Bold */
@@ -86,7 +86,7 @@
     --code-size: var(--font-smaller);
     --code-background: var(--background-primary);
     --code-radius-background: var(--radius-xl);
-    --code-normal: var(--text-muted);
+    --code-normal: var(--text-red);
     --code-comment: var(--color-green);
     --code-function: var(--color-purple);
     --code-important: var(--color-orange);
@@ -277,7 +277,8 @@
     --input-font-weight: var(--font-normal);
     --input-border-width: 1px;
     /* Italic */
-    --italic-color: inherit;
+    /* TODO */
+    --italic-color: rgb(150, 150, 150); 
     --italic-weight: inherit;
     /* Z-index */
     --layer-cover: 5;
@@ -8369,11 +8370,12 @@
      padding: 0.1em 0;
    }
    .markdown-rendered pre {
+     border: var(--code-border);
      position: relative;
      padding: var(--size-4-3) var(--size-4-4);
      min-height: 38px;
      background-color: var(--code-background);
-     border-radius: var(--code-radius);
+     border-radius: var(--code-radius-background);
      white-space: var(--code-white-space);
      overflow-x: auto;
    }
@@ -8489,7 +8491,6 @@
    :not(pre) > code[class*="language-"],
    pre[class*="language-"] {
      background: var(--code-background);
-     border: var(--code-border);
      border-radius: var(--code-radius-background);
    }
    /* Code blocks */
@@ -15735,4 +15736,7 @@
      line-height: var(--line-height-normal);
    }
    
-   
+   .highlight {
+    border: 2px solid #ff0000; /* Bordure rouge de 2 pixels */
+    padding: 5px;              /* Un peu d'espace entre le texte et la bordure */
+  }
