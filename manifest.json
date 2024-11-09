@@ -2,5 +2,6 @@
     "name": "ThemeObsidian",
     "version": "0.0.1",
     "minAppVersion": "0.16.0",
-    "author": "Nicolas Vandijstadt"
+    "author": "Nicolas Vandijstadt",
+    "authorUrl": "https://github.com/vandijstadt"
 }
